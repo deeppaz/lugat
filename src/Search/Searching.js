@@ -1,7 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import './Searching.css'
 
 class Searching extends Component {
+    handleChange = event => {
+        this.props.textChange(event);
+    }
     render() {
         return (
             <div className="searchContainer">
@@ -12,5 +17,10 @@ class Searching extends Component {
         )
     }
 }
+
+Searching.propTypes = {
+    textChange: PropTypes.func
+};
+
 
 export default Searching

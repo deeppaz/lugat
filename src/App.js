@@ -23,7 +23,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Searching textChange={this.handleSearchChange}/>
-        <Body tanim="tanım gelecek" />
+        <Body tanim={this.state.filteredLugat} />
       </div>
     )
   }
