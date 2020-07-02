@@ -6,11 +6,23 @@ import Body from './Body/Body';
 import filterLugat from './filterLugat';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      filteredLugat: filterLugat("")
+    };
+  }
+  handleSearchChange = event => {
+    this.setState({
+      filteredLugat: filterLugat(event.target.value)
+    });
+    console.log(this.state.filteredLugat)
+  }
   render() {
     return (
       <div className="App">
         <Header />
-        <Searching />
+        <Searching textChange={this.handleSearchChange}/>
         <Body tanim="tanım gelecek" />
       </div>
     )
