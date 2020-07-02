@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <Searching />
-      <Body />
+      <Body tanim="tanım gelecek"/>
     </div>
   );
 }

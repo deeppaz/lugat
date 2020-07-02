@@ -9,12 +9,12 @@
   display: inline-flex;
 }
 
-.bodyContainer .definitionHeader {
+.bodyContainer .tanimHeader {
   color: #3a86ff;
   font-size: 50px;
 }
 
-.bodyContainer .definitionText {
+.bodyContainer .tanimText {
   padding: 20px 20px;
   font-size: 20px;
   font-family: "Roboto Condensed", sans-serif;

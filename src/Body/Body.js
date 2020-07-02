@@ -6,8 +6,8 @@ class Body extends Component {
         return (
             <div className="bodyContainer">
                 <div className="innerContainer">
-                    <div className="definitionHeader">Tanım: </div>
-                    <div className="definitionText">{this.props.definition}</div>
+                    <div className="tanimHeader">Tanım: </div>
+                    <div className="tanimText">{this.props.tanim}</div>
                 </div>
             </div>
         )
