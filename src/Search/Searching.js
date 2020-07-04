@@ -11,7 +11,7 @@ class Searching extends Component {
         return (
             <div className="searchContainer">
                 <div>
-                    <input onChange={this.handleChange} />
+                    <input onChange={this.handleChange} type="text" placeholder="Kelime ara!"/>
                 </div>
             </div>
         )
