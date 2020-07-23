@@ -33,7 +33,7 @@ myInterface.on('line', function (line) {
     // console.log(anlami);
     console.log(kelime + " : " + anlami);
     //}
-    if (lineno == 10000) myInterface.close();
+    if (lineno == 85285) myInterface.close();
 });
 
 
