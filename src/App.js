@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Header from './Header/Header';
 import Searching from './Search/Searching';
 import Body from './Body/Body';
-
+import MyKeyboard from './Keyboard/MyKeyboard'
 import filterLugat from './filterLugat';
 
 class App extends Component {
@@ -23,6 +23,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Searching textChange={this.handleSearchChange}/>
+        <MyKeyboard/>
         <Body tanim={this.state.filteredLugat} />
       </div>
     )
